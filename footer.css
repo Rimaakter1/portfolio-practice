@@ -66,4 +66,16 @@ footer {
 
 
 
-@media only screen and (min-width:200px) and (max-width:570px) {}
+@media only screen and (min-width:200px) and (max-width:570px) {
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .left-footer-form,
+    .right-footer-contact,
+    #send-btn,
+    .input {
+        width: 100%;
+    }
+}
