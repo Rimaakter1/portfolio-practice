@@ -24,3 +24,7 @@ body {
 .container {
     padding: 0px 40px;
 }
+
+.bg-gradient {
+    background-image: linear-gradient(to bottom right, #3e4af167, #b90bf949);
+}
