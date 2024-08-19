@@ -85,10 +85,9 @@
     <!-- header and navbar end  -->
 
 
-    <section style="margin: 80px 0; padding: 50px 50px 80px 50px" class="my-expertise bg-gradient">
-
+    <section class="my-expertise bg-gradient">
         <h1 class="section-title">// my expertise </h1>
-        <div style="display: flex; justify-content: space-between;">
+        <div class="expertise-card-container">
             <div class="expertise-card"
                 style="border: 1px solid #686868; width: fit-content; height: 348px; padding: 40px 0; border-radius: 40px; background-color: #68686844;">
 
@@ -180,7 +179,7 @@
                 <h1>//Project</h1>
             </div>
 
-            <div class="projects">
+            <div id="projects" class="projects">
                 <div class="project">
                     <img src="./images/project-1.png" alt="">
                 </div>
@@ -196,7 +195,7 @@
             </div>
 
             <div class="check-all-project">
-                <button>Check All Project</button>
+                <button onclick="handleShowMoreProjects()">Check All Project</button>
             </div>
         </section>
         <!-- my projects ends  -->
@@ -395,12 +394,18 @@
                     </h1>
                 </div>
 
-                <form class="form">
-                    <input class="input" type="text" name="" placeholder="YOUR NAME">
-                    <input class="input" type="email" name="" placeholder="YOUR EMAIL">
-                    <input style="margin-top: 70px;" class="input" type="text" name="" placeholder="YOUR MESSAGE">
-                    <button id="send-btn">SEND</button>
+                <form onsubmit="handleContact(event)" class="form">
+                    <input class="input" type="text" name="name" placeholder="YOUR NAME">
+                    <input class="input" type="email" name="email" placeholder="YOUR EMAIL">
+                    <input style="margin-top: 70px;" class="input" type="text" name="message"
+                        placeholder="YOUR MESSAGE">
+                    <button type="submit" id="send-btn">SEND</button>
                 </form>
+                <div style="margin-top: 20px;" id="success-container">
+                    <!-- <p>Your Name: Rima</p>
+                    <p>Your Email: rima@gmail.com</p>
+                    <p>Your Message: Good</p> -->
+                </div>
             </div>
 
             <div class="right-footer-contact">
@@ -432,7 +437,7 @@
     </footer>
 
     <!-- footer end  -->
-
+    <script src="script.js"></script>
 </body>
 
 </html>
